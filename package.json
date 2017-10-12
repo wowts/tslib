@@ -1,0 +1,14 @@
+{
+  "name": "@wowts/tslib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sidoine De Wispelaere",
+  "license": "MIT",
+  "dependencies": {
+    "@wowts/lua": "^1.0.3"
+  }
+}
