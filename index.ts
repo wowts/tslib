@@ -20,7 +20,7 @@ export function newClass(base: any, prototype: any) {
 
     c.__index = c;
     setmetatable(c, <any> {
-        __call: (cls, ...args: any[]) => {
+        __call: (cls: any, ...args: any[]) => {
             const self = <{constructor(...args: any[]): void}> setmetatable({}, cls);
             self.constructor(...args);
             return self;
