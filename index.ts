@@ -20,12 +20,13 @@ export function newClass(base: any, prototype: any) {
 
     c.__index = c;
     setmetatable(c, <any> {
-        __call: (cls: any, ...args: any[]) => {
+        // tslint:disable-next-line:variable-name
+        __call: (cls: any, ...__args: any[]) => {
             const self = <{constructor(...args: any[]): void}> setmetatable({}, cls);
-            self.constructor(...args);
+            self.constructor(...__args);
             return self;
-          },
-          __index: base,
+        },
+        __index: base,
     });
     return c;
 }

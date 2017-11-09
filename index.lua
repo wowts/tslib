@@ -17,9 +17,9 @@ __exports.newClass = function(base, prototype)
     end
     c.__index = c
     setmetatable(c, {
-        __call = function(cls, args)
+        __call = function(cls, ...)
             local self = setmetatable({}, cls)
-            self:constructor(args)
+            self:constructor(...)
             return self
         end,
         __index = base

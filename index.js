@@ -15,9 +15,10 @@ function newClass(base, prototype) {
     }
     c.__index = c;
     lua_1.setmetatable(c, {
-        __call: (cls, ...args) => {
+        // tslint:disable-next-line:variable-name
+        __call: (cls, ...__args) => {
             const self = lua_1.setmetatable({}, cls);
-            self.constructor(...args);
+            self.constructor(...__args);
             return self;
         },
         __index: base,
