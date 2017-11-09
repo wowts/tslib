@@ -1,4 +1,4 @@
-local __exports = LibStub:NewLibrary("tslib", 10000)
+local __exports = LibStub:NewLibrary("tslib", 10001)
 if not __exports then return end
 local _G = _G
 local setmetatable = setmetatable
