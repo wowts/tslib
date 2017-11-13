@@ -1,4 +1,4 @@
-import { _G, setmetatable } from "@wowts/lua";
+import { setmetatable } from "@wowts/lua";
 
 export type Constructor<T> = new(...argv: any[]) => T;
 
