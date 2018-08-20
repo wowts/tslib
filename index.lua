@@ -1,4 +1,4 @@
-local __exports = LibStub:NewLibrary("tslib", 10001)
+local __exports = LibStub:NewLibrary("tslib", 10100)
 if not __exports then return end
 local setmetatable = setmetatable
 __exports.newClass = function(base, prototype)
