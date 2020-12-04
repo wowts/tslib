@@ -1,19 +1,23 @@
 {
-  "name": "@wowts/tslib",
+    "name": "@wowts/tslib",
   "version": "1.1.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "tstolua -j",
     "watch": "tstolua -w -j"
-  },
-  "author": "Sidoine De Wispelaere",
-  "license": "MIT",
-  "dependencies": {
+    },
+    "author": "Sidoine De Wispelaere",
+    "license": "MIT",
+    "dependencies": {
     "@wowts/lua": "^1.3.0"
-  },
-  "devDependencies": {
-    "@wowts/tstolua": "^1.4.0"
-  }
+    },
+    "devDependencies": {
+        "@wowts/tstolua": "^1.11.4"
+    },
+    "lua": {
+        "name": "tslib",
+        "entry": "files.xml"
+    }
 }
