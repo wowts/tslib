@@ -38,7 +38,9 @@ let falseWrap = {};
 
 export function ternaryWrap(value: any) {
     return (
-        (value === null && nilWrap) || (value === false && falseWrap) || value
+        (value === undefined && nilWrap) ||
+        (value === false && falseWrap) ||
+        value
     );
 }
 
